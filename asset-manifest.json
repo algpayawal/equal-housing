@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/equal-housing/static/css/main.d248a83b.css",
+    "main.js": "/equal-housing/static/js/main.e6a54f73.js",
+    "static/media/room.jpg": "/equal-housing/static/media/room.865c24229190c7c7a015.jpg",
+    "static/media/Icon.jpg": "/equal-housing/static/media/Icon.31349c5e80fdef24e200.jpg",
+    "static/media/login-bg.jpg": "/equal-housing/static/media/login-bg.accbe2ba61711b6ba772.jpg",
+    "static/media/shape.png": "/equal-housing/static/media/shape.27500d737ebcd86ae1f1.png",
+    "static/media/head.png": "/equal-housing/static/media/head.9d7e70084080d13a2a09.png",
+    "static/media/eh-logo.png": "/equal-housing/static/media/eh-logo.5eadfebe64b6bc21a74a.png",
+    "index.html": "/equal-housing/index.html",
+    "main.d248a83b.css.map": "/equal-housing/static/css/main.d248a83b.css.map",
+    "main.e6a54f73.js.map": "/equal-housing/static/js/main.e6a54f73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d248a83b.css",
+    "static/js/main.e6a54f73.js"
+  ]
+}
