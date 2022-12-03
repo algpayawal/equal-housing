@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./pages/assets/images/login-bg.jpg');
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 1px;
+    text-align: center;
+}
+
+.nav {
+    background-color: rgb(218, 218, 218);
+    width: 100vw;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    box-shadow: 0px 10px #888888;
+    position: relative;
+}
+
+.site-title {
+    font-size: 2rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.searchInput_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.searchInput_Container input {
+    background-color: white;
+    border: 0;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 15px;
+    padding: 30px;
+    padding-left: 30px;
+    height: 40px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.searchIcon {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 40px;
+}
+
+.template_Container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 75%;
+    height: 750px;
+}
+
+.template {
+    margin: 0 auto;
+    height: 550px;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.foot {
+    margin-top: 50px;
+    height: 70px;
+}
+
+.footer {
+    background-color: #aaa9a9;
+    width: 100%;
+    height: 400px;
+}
+
+.button-prev {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-next {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.card {
+    color: black;
+}
+
+.cards {
+    display: grid;
+    gap: 5px;
+    text-align: left;
+}
+
+.aptResults {
+    background-color: #008905;
+    margin: 0 auto;
+    height: 90%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.aptAddress {
+    font-size: 23px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+/* Screen larger than 900px? 3 columns */
+
+@media (min-width: 1500px) {
+    h1 {
+        font-size: 50px;
+    }
+    .cards {
+        margin: 0 auto;
+        grid-template-columns: 28vw;
+        grid-template-rows: auto;
+        grid-template-areas: "aptImg aptAddress" "aptImg aptRent" "aptImg aptStatus" "aptDetails aptContact";
+    }
+    .aptImg {
+        margin: 0 auto;
+        grid-area: aptImg;
+        align-items: center;
+        justify-content: center;
+        width: 450px;
+        height: 290px;
+        overflow: hidden;
+        object-fit: none;
+        object-position: 10px 10%;
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .aptAddress {
+        margin: 0 auto;
+        grid-area: aptAddress;
+        font-size: 35px;
+        font-weight: bold;
+        width: 35vw;
+        height: 120px;
+        overflow: hidden;
+        padding-left: 20px;
+    }
+    .aptRent {
+        margin: 0 auto;
+        grid-area: aptRent;
+        font-size: 35px;
+        width: 35vw;
+        height: 70px;
+        padding-left: 20px;
+    }
+    .aptStatus {
+        margin: 0 auto;
+        grid-area: aptStatus;
+        text-align: start;
+        font-size: 35px;
+        font-weight: bold;
+        width: 35vw;
+        height: 80px;
+        padding-left: 20px;
+    }
+    .aptDetails {
+        margin: 0 auto;
+        grid-area: aptDetails;
+        text-align: start;
+        font-size: 25px;
+        width: 35vw;
+        height: 200px;
+        overflow: hidden;
+        padding: 30px 0px 0px 30px;
+    }
+    .aptContact {
+        margin: 0 auto;
+        grid-area: aptContact;
+        text-align: start;
+        font-size: 25px;
+        width: 35vw;
+        height: 200px;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+}
